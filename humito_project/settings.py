@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 # Application definition
 
 INSTALLED_APPS = [
+    'humito_site.apps.HumitoSiteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

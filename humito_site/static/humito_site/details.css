@@ -1,0 +1,31 @@
+
+.modal-body {
+    font-size: 10px;
+    text-align: center;
+    background-color: #C6B8D9;
+}
+
+.item-price {
+    font-size: large;
+    font-weight: 750;
+}
+
+.flavorList-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flavor-container {
+    margin: 2px;
+    border-radius: 15px;
+    height: 20px;
+    width: fit-content;
+    background-color: #443659;
+    color: #d3d3d3;
+}
+
+.flavor {
+    margin: 1.5px 10px 0 10px;
+} 
