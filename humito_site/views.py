@@ -7,9 +7,9 @@ def index(request):
     context = {
         "item_list": item_list,
     }
-    return render(request, "website/index.html", context)
+    return render(request, "humito_site/index.html", context)
 
 
 def detail(request, item_id):
     item = VapeInfo.objects.get(id=item_id)
-    return render(request, "website/detail.html", {"item": item})
+    return render(request, "humito_site/detail.html", {"item": item})
