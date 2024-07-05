@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-rf4oy6d_gqbwr%9pwbbuve6$ci0yjqqwz^#_k*#kt_4zhoq5na'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
@@ -121,9 +121,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, "humito_site/static/humito_site")]
 STATIC_URL = "static/"
-# STATIC_ROOT = os.path.join(BASE_DIR, "humito_site/staticfiles/humito_site")
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, "staticfiles/humito_site")]
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

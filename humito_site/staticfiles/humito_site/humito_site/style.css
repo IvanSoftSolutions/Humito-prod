@@ -1,0 +1,141 @@
+
+.product-container {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #32253F;
+    color: #D3D3D3
+  }
+  
+  .toolbar-container {
+    display: flex;    
+    padding: 100px;
+    background-color: #8C618C;
+  }
+  
+  .fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    user-select: none;
+    position: absolute;
+    top: 30px; left: 30px;
+  }
+  
+  .fab {
+    position: relative;
+    background-color: #C6B8D9;
+    height: 40px; width: 40px;
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+  }
+  
+  .fab-content {
+    display: flex;
+    align-items: center; justify-content: center;
+    height: 100%; width: 100%;
+    border-radius: 50%;
+  }
+  
+  .material-icons {
+    color: black;
+    font-size: 30px;
+  }
+  
+  .sub-button {
+    position: absolute;
+    display: none;
+    align-items: center; justify-content: center;
+    bottom: 10px; 
+    height: 25px; width: 100px;
+    background-color: #443659;
+    border-radius: 9% 10% 10% 10% / 50% 46% 56% 48%;
+    transition: transform .3s ease;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .sub-button:nth-child(2){
+    transform: translateY(50px);
+  }
+  .sub-button:nth-child(3){
+    transform: translateY(90px);
+  }
+  .sub-button:nth-child(4){
+    transform: translateY(130px);
+  }
+  
+  .material-icons {
+    color: black;
+    padding-top: 6px;
+  }
+  
+  ul{
+    width: 390px;
+    list-style-type: none;
+  }
+  
+  li {
+    float:left;
+    background-color: #F2D0CF;
+    height: 150px;
+    width: 100px;
+    margin:0 40px 175px 40px;
+    border-radius: 15px;
+  }
+  
+  li > img {
+    width: 100px;
+  }
+  
+  
+  li:nth-child(even){
+    margin-right:0;
+  }
+  
+  .image-container {
+    display: flex;
+    height: 150px;
+    width: 100px;
+  }
+  
+  .item-image {
+    display: flex;
+    height: 150px;
+    width: 100px;
+  }
+  
+  .item-info .item-price .item-availability {
+    color: #D3D3D3;
+    justify-content: center;
+  }
+  
+  .item-info > .btn {
+    color: #D3D3D3;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    &:hover {
+      color: #C6B8D9;
+    }
+  }
+  
+  .item-price > p {
+    font-size: 12.5px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  
+  .item-availability > p  {
+    font-size: 12.5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  

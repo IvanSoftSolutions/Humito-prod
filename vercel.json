@@ -9,10 +9,6 @@
     ],
     "routes": [
       {
-        "src": "/static/humito_site/(.*)",
-        "dest": "/static/humito_site/$1"
-      },
-      {
         "src": "/(.*)",
         "dest": "humito_project/wsgi.py"
       }
