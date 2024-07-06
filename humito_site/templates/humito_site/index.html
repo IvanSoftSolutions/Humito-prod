@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="toolbar-container">
-                <div class="fab-container">
+                {% comment %} <div class="fab-container">
                     <button onclick="openMenu()" class="fab shadow">
                         <div class="fab-content">
                             <i class="bi bi-list material-icons"></i>
@@ -35,11 +35,43 @@
                             <span class="material-icons">Filter_3</span>
                         </a>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
         </header>
         <main>
             {% if item_list %}
+                <div class="container">
+                    <div class="row">
+                        {% for item in item_list %}
+                            <div class="col-sm-6 pt-5">
+                                <div class="image-container">
+                                    <a id="image-modal" data-bs-toggle="modal" data-bs-target="#productModal" data-id="{{ item.id }}">
+                                        <img class="item-image" src={{item.image}} /> 
+                                    </a>        
+                                </div>
+                                <div class="item-info">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#productModal" data-id="{{ item.id }}">
+                                        {{item.name}} 
+                                    </button>
+                                </div>
+                                <div class="item-price">
+                                    <p > ${{item.item_price_calc}} </p>
+                                </div>
+                                <div class="item-availability">
+                                    {% if item.available == True %}
+                                        <p >Disponible</p>
+                                    {%else %}
+                                        <p >Solo pedido</p>
+                                    {%endif%}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% else %}
+                <p>No items available.</p>
+            {% endif %}
+            {% comment %} {% if item_list %}
             <div class="product-container">
                     <ul>
                     {% for item in item_list %}
@@ -70,7 +102,7 @@
                 {% else %}
                     <p>No items available.</p>
                 {% endif %}
-            </div>
+            </div> {% endcomment %}
             
             <!-- Modal -->
             <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
