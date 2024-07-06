@@ -93,8 +93,8 @@ main {
   }
   
   img {
-    max-width: 500px;
-    max-height: 400px;
+    max-width: 400px;
+    max-height: 300px;
   }
   
   .item-info > .btn, .item-price, .item-availability {
@@ -103,7 +103,7 @@ main {
   }
   
   .item-info > .btn {
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 0;
@@ -113,13 +113,13 @@ main {
   }
   
   .item-price > p {
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
     margin: 10px 0 10px 0;
   }
   
   .item-availability > p  {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
