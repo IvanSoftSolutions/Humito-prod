@@ -77,6 +77,10 @@ main {
     padding-top: 6px;
   }
 
+  .row {
+    justify-items: space-between;
+  }
+
   .col-sm-6 {
     justify-items: center;
     text-align: center;
@@ -89,7 +93,6 @@ main {
     border-radius: 15px;
     min-width: 350px;
     max-height: 500px;
-    margin: 0 25px 0 25px;
   }
   
   img {
