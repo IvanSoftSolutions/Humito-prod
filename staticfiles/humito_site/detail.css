@@ -1,19 +1,21 @@
 
 .modal-header {
+    font-size: 3.5rem;
     justify-content: center;
-}
-
-.modal-body {
-    font-size: 1rem;
-    text-align: center;
-    background-color: #C6B8D9;
 }
 
 .item-price {
     color: #443659;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 750;
 }
+
+.modal-body {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #C6B8D9;
+}
+
 
 .flavorList-container {
     display: flex;
