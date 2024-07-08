@@ -11,10 +11,25 @@
     </head>
     <body>
         <div class='modal-header'>
-            <p>{{item.name}}</p> 
+            <p class='modal-title w-100 text-center'>{{item.name}}</p> 
         </div>
         <div class='modal-body'>
-            <p class='item-price'>${{ item.price }}<p>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src={{item.image}} alt="First slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  {% comment %} <span class="sr-only">Previous</span> {% endcomment %}
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  {% comment %} <span class="sr-only">Next</span> {% endcomment %}
+                </a>
+            </div>
+            <p class='product-price'>${{ item.item_price_calc }}<p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 

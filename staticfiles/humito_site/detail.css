@@ -1,10 +1,9 @@
 
 .modal-header {
     font-size: 3.5rem;
-    justify-content: center;
 }
 
-.item-price {
+.product-price {
     color: #443659;
     font-size: 3rem;
     font-weight: 750;
