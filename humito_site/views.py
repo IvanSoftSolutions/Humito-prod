@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import VapeInfo
+from .models import VapeInfo, VapeImages
 
 def index(request):
     item_list = VapeInfo.objects.order_by("id")
@@ -12,4 +12,9 @@ def index(request):
 
 def detail(request, item_id):
     item = VapeInfo.objects.get(id=item_id)
-    return render(request, "humito_site/detail.html", {"item": item})
+    image_list = VapeImages.objects.filter(vape_id_id=item_id)
+    context = {
+        "item": item,
+        "image_list": image_list
+    }
+    return render(request, "humito_site/detail.html", context)
