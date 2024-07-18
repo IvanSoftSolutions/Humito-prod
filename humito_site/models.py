@@ -6,7 +6,7 @@ class VapeInfo(models.Model):
     hits = models.CharField(max_length=32)
     price = models.IntegerField(default=0)
     multiplier = models.FloatField(default=0.0)
-    flavors = models.JSONField()
+    flavors = models.JSONField(default=None, blank=True, null=True)
     available = models.BooleanField()
     image = models.ImageField(default='')
     
