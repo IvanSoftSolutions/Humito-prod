@@ -8,7 +8,7 @@ class VapeInfo(models.Model):
     multiplier = models.FloatField(default=0.0)
     flavors = models.JSONField(default=None, blank=True, null=True)
     available = models.BooleanField()
-    image = models.ImageField(default='')
+    image = models.CharField(default='')
     
     def __str__(self):
         return self.name
