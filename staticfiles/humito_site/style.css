@@ -3,7 +3,7 @@ main {
   background-color: #443659;
 }
 
-.product-container {
+  .product-container {
     padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +75,16 @@ main {
   .material-icons {
     color: black;
     padding-top: 6px;
+  }
+
+  #dropdownMenuButton {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+  }
+
+  .dropdown-item {
+    font-size: 1rem;
   }
 
   .row {

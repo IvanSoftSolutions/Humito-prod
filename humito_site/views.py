@@ -18,3 +18,17 @@ def detail(request, item_id):
         "image_list": image_list
     }
     return render(request, "humito_site/detail.html", context)
+
+def filter_disponible(request):
+    item_list = VapeInfo.objects.filter(available=True)
+    context = {
+        "item_list": item_list,
+    }
+    return render(request, "humito_site/index.html", context)
+
+def filter_pedido(request):
+    item_list = VapeInfo.objects.filter(available=False)
+    context = {
+        "item_list": item_list,
+    }
+    return render(request, "humito_site/index.html", context)
