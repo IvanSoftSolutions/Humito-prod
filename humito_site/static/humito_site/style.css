@@ -1,5 +1,9 @@
 
-.product-container {
+main {
+  background-color: #443659;
+}
+
+  .product-container {
     padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -72,50 +76,47 @@
     color: black;
     padding-top: 6px;
   }
-  
-  ul{
-    width: 390px;
-    list-style-type: none;
+
+  #dropdownMenuButton {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 1.5rem;
   }
-  
-  li {
-    float:left;
-    background-color: #F2D0CF;
-    height: 150px;
-    width: 100px;
-    margin:0 40px 175px 40px;
-    border-radius: 15px;
+
+  .dropdown-item {
+    font-size: 1rem;
   }
-  
-  li > img {
-    width: 100px;
+
+  .row {
+    justify-items: space-between;
   }
-  
-  
-  li:nth-child(even){
-    margin-right:0;
+
+  .col-sm-6 {
+    justify-items: center;
+    text-align: center;
   }
   
   .image-container {
     display: flex;
-    height: 150px;
-    width: 100px;
+    justify-content: center;
+    background-color: #F2D0CF;
+    border-radius: 15px;
+    min-width: 300px;
+    max-height: 500px;
   }
   
-  .item-image {
-    display: flex;
-    height: 150px;
-    width: 100px;
+  img {
+    max-width: 400px;
+    max-height: 300px;
   }
   
-  .item-info .item-price .item-availability {
+  .item-info > .btn, .item-price, .item-availability {
     color: #D3D3D3;
     justify-content: center;
   }
   
   .item-info > .btn {
-    color: #D3D3D3;
-    font-size: 15px;
+    font-size: 3.5rem;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 0;
@@ -125,13 +126,13 @@
   }
   
   .item-price > p {
-    font-size: 12.5px;
+    font-size: 3rem;
     text-align: center;
     margin: 10px 0 10px 0;
   }
   
   .item-availability > p  {
-    font-size: 12.5px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
