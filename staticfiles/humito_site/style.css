@@ -3,6 +3,23 @@ main {
   background-color: #443659;
 }
 
+  .hero {
+    width: 100%;
+    height: 300px;
+    background-color: #8C618C;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .toolbar-container {
+    display: flex;    
+    padding: 100px;
+    background-color: #8C618C;
+  }
+
   .product-container {
     padding-top: 15px;
     display: flex;
@@ -10,13 +27,7 @@ main {
     background-color: #32253F;
     color: #D3D3D3
   }
-  
-  .toolbar-container {
-    display: flex;    
-    padding: 100px;
-    background-color: #8C618C;
-  }
-  
+    
   .fab-container {
     display: flex;
     flex-direction: column;
@@ -80,11 +91,11 @@ main {
   #dropdownMenuButton {
     margin-top: 30px;
     margin-left: 30px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .dropdown-item {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .row {
@@ -105,7 +116,7 @@ main {
     max-height: 500px;
   }
   
-  img {
+  .product-img {
     max-width: 400px;
     max-height: 300px;
   }
@@ -140,3 +151,8 @@ main {
     margin-bottom: 10px;
   }
   
+  .contact {
+    background-color: #8C618C;
+    width: 100%;
+    height: 100px;
+  }

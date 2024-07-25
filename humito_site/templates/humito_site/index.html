@@ -14,7 +14,8 @@
     </head>
     <body>
         <header>
-            <div class="toolbar-container">
+            <div class="hero">
+                <img src='{% static 'humito_site/hero.png'%}' />
                 {% comment %} <div class="fab-container">
                     <button onclick="openMenu()" class="fab shadow">
                         <div class="fab-content">
@@ -57,7 +58,7 @@
                             <div class="col-sm-6 pt-5">
                                 <div class="image-container">
                                     <a id="image-modal" data-bs-toggle="modal" data-bs-target="#productModal" data-id="{{ item.id }}">
-                                        <img src={{item.image}} /> 
+                                        <img class='product-img' src={{item.image}} /> 
                                     </a>        
                                 </div>
                                 <div class="item-info">
@@ -93,6 +94,12 @@
                     </div>
                 </div>
             </div>
+
+            {% comment %} <div class="fixed-bottom">
+                <div class="contact">
+
+                </div>
+            </div> {% endcomment %}
         </main>
         
         
